@@ -1,11 +1,5 @@
 while True:
- chars = {}
- text = input()
- for char in text:
-     if char.isalpha():
-         if char.lower() in chars:
-             chars[char.lower()] += 1
-         else:
-             chars[char.lower()] = 1
+    enter = input("Please type a sentence: ")
+    print("a e i o u")
+    print(*map(enter.lower().count, "aeiou"))
 
- print(chars)
